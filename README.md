@@ -1,6 +1,6 @@
 # The dilemma of quantum neural networks
 
-This repository is the official implementation of *The dilemma of quantum neural networks*. 
+This repository is the official implementation of [*The dilemma of quantum neural networks*](https://arxiv.org/abs/2106.04975). 
 
 >We systematically explore the learnability of quantum neural networks compared with classical neural networks. The overall hypothesis of quantum models and classical models is shown below:
 
@@ -18,14 +18,7 @@ pip install -r requirements.txt
 
 ### Quantum neural networks
 
-Please refer to the directory `script`. There are two types of server, including Slurm server with slurm system and native linux server. 
-- For Slurm server, script starts with prefix `slurm`, an example is given below:
-
-```bash
-bash script/qnn/slurm_run_qnn_all.sh
-```
-
-- Running on a native linux server, please refer to `script/run_example.sh`:
+Running on a native linux server, please refer to `script/run_example.sh`:
 ```bash
 python --config-file config/xxx.yml --index 0
 ```
@@ -58,11 +51,14 @@ python data_gen.py
 - The Wine data: https://archive.ics.uci.edu/ml/datasets/wine
 - MNIST: http://yann.lecun.com/exdb/mnist/
 
-## Results
 
-Please refer to paper.
+## Bibtex
 
-
-## Contributing
-
->xxx. 
+```
+@article{qian2021dilemma,
+  title={The dilemma of quantum neural networks},
+  author={Qian, Yang and Wang, Xinbiao and Du, Yuxuan and Wu, Xingyao and Tao, Dacheng},
+  journal={arXiv preprint arXiv:2106.04975},
+  year={2021}
+}
+```
