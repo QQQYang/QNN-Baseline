@@ -1,0 +1,20 @@
+CIRCUIT:
+  NAME: 'build_embedding'
+  N_QUBIT: 16
+  N_DEPTH: 6
+  BACKEND: 'default.qubit'
+
+DATASET:
+  ROOT: 'data'
+  NAME: 'synthetic'
+  RANDOM_LABEL: True
+
+TRAIN:
+  LR: 0.01
+  N_EPOCH: 100
+  BATCH_SIZE: 4
+  WEIGHT_DECAY: 0
+  EARLY_STOP: 0
+  OPT: 'GD'
+
+LOG_DIR: 'logs/qnn_embedding'

@@ -1,0 +1,11 @@
+termcolor
+tqdm
+pyyaml
+easydict
+torch
+torchvision
+pennylane
+qiskit
+pennylane-qiskit
+tensorflow
+tensorflow-quantum

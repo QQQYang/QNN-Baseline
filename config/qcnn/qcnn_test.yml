@@ -1,0 +1,31 @@
+CIRCUIT:
+  NAME: 'build_qcnn_torch'
+  N_QUBIT: 16
+  N_DEPTH: 2
+  BACKEND: 'default.qubit'
+
+MODEL:
+  QCNN:
+    KERNEL_SIZE: [2, 2]
+    DIM: [1, 4]
+    PADDING: True
+
+DATASET:
+  ROOT: 'data'
+  RANDOM_LABEL: False
+  SAMPLE: 2000
+
+TRAIN:
+  LR: 1.0e-4
+  N_EPOCH: 100
+  BATCH_SIZE: 4
+  WEIGHT_DECAY: 0
+  EARLY_STOP: 0
+  OPT:
+    NAME: "SGD"
+    STEPS: 40
+    GAMMA: 0.5
+    MOMENTUM: 0.9
+  EVAL_EPOCH: 10
+
+LOG_DIR: 'logs/qcnn'
