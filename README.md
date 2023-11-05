@@ -55,10 +55,11 @@ python data_gen.py
 ## Bibtex
 
 ```
-@article{qian2021dilemma,
+@article{qian2022dilemma,
   title={The dilemma of quantum neural networks},
   author={Qian, Yang and Wang, Xinbiao and Du, Yuxuan and Wu, Xingyao and Tao, Dacheng},
-  journal={arXiv preprint arXiv:2106.04975},
-  year={2021}
+  journal={IEEE Transactions on Neural Networks and Learning Systems},
+  year={2022},
+  publisher={IEEE}
 }
 ```
